@@ -1,0 +1,352 @@
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#4e2703;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+html{
+    font-size: 52.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+body{
+	background-color: black;
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+body#facture{
+    background:rgb(162, 133, 123);
+}
+
+.connecter .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:#383024;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+/*barre de navigation*/
+.navbar-fixed-top {
+    min-height: 80px;
+
+}
+.navbar-brand{
+    font-size: 220%;
+}
+.navbar-nav{
+    font-size: 200%;
+}
+.dropdown-menu{
+    font-size: 100%;
+}
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+}
+/*Caroussel*/
+div.c-wrapper{
+    margin: auto;
+    width: 67%;
+}
+.carousel-inner h3{
+    font-size: 300.5%;
+}
+.carousel-inner p{
+    font-size: 210.5%;
+}
+.carousel-inner img {
+    max-width: 105%;
+ }
+/*toutes les voitures*/
+.article .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap:3.5rem;
+    margin-bottom: 4%;
+}
+
+.article .box-container .box{
+    border:var(--border);
+}
+
+.article .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.article .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.article .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.article .box-container .box .content{
+    padding:2rem;
+}
+
+.article .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.article .box-container .box .content .title:hover{
+    color:var(--main-color);
+}
+
+.article .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.article .box-container .box .content ul{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:1rem 0;
+    text-transform: none;
+    margin-left: 5%;
+}
+/*Voiture loueur*/
+.article .box-containerr{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap:3.5rem;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+.article .box-containerr .box{
+    border:var(--border);
+}
+
+.article .box-containerr .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.article .box-containerr .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.article .box-containerr .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.article .box-containerr .box .content{
+    padding:2rem;
+}
+
+.article .box-containerr .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.article .box-containerr .box .content .title:hover{
+    color:var(--main-color);
+}
+
+.article .box-containerr .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.article .box-containerr .box .content ul{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:1rem 0;
+    text-transform: none;
+    margin-left: 5%;
+}
+.heading{
+    color: rgb(57, 35, 2);
+    font-size: 400%;
+    margin-top: 6%;
+}
+/*About us de accueil*/
+.about .row{
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 40rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:4 5 45rem;
+    padding:2em;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.miaou{
+    background-color: rgb(223, 220, 219);
+}
+.custom-select{
+    font-size: 100%;
+}
+.form-control{
+    font-size: 100%;
+}
+.input-group-text{
+    font-size: 100%;
+}
+.ajout_voiture{
+    margin-top: -13%;
+    margin-bottom: -13%;
+}
+
+/*Inscription + co*/
+.inCo {
+    margin-top: 70px;
+    background-color: rgb(93, 87, 87);
+    padding: 60px 150px;
+    margin-left: 28%;
+    margin-right: 28%;
+    border-radius: 10px;
+    min-width: 100px;
+    font-size: 200%;
+}
+.inCo h1{
+  color: #131212;
+  text-align:center;
+}
+.inCo .inputs {
+  display: flex;
+  flex-direction: column;
+}
+.inCo .inputs input[type='text'], input[type='password'], input[type='email']{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  outline:none;
+  margin-bottom: 15px;
+}
+.inCo p.inscription{
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+.inCo p.inscription span{
+  color: #f1e7d2;
+}
+.inCo button{
+  padding: 15px 25px;
+  border-radius: 5px;
+  border:none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #383024;
+  outline:none;
+  cursor:pointer;
+}
+.table{
+    margin-top: 110px;
+    color: rgb(57, 35, 2);
+    font-size: 17px;
+}
+.total{
+    margin-top: -4%;
+    margin-left: 70%;
+}
+.form-controll{
+    margin-top: 20%;
+    background-color: rgb(84, 59, 59);
+    font-size: 17px;
+    margin-left: 17%;
+    margin-right: 10%;
+
+
+}
+
+/* CORRECTION */
+
+
+/*essaie*/
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+    .bg-grey {
+    background-color: #eae8e8;
+    }
+
+    @media (min-width: 992px) {
+    .card-registration-2 .bg-grey {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    }
+    }
+
+    @media (max-width: 991px) {
+    .card-registration-2 .bg-grey {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    }
+    }
